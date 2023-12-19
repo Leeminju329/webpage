@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  </head>
+
+  <body>
+    <!--네비게이션 바(메뉴)-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid my-2 ms-2 me-2 ">
+
+        <a class="navbar-brand ms-2 fw-bold" href="index.html">
+          <img src="images/dog-footprint.png" alt="logo_image" width="30" height="30"> Love Pet
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="메뉴">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-underline ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="protected_animal.html">보호중인 동물</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adoptioninquiry.html">입양문의</a>
+            </li>
+            <li class="nav-item" id="nav-item_1">
+              <a class="nav-link" href="adoptionreview.html">입양후기</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav nav-underline" id="logi">
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='login.html'" >로그인</label>
+            </li>
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='join.html'">회원가입</label>
+            </li>
+  
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!--메인페이지 이미지+글-->
+    <header class="section" id="main">
+      <div id="main_id">
+        <div id="main_text" >
+          <h1>Adopt Animals, Adopt Family <i class="bi bi-suit-heart-fill"></i></h1>
+        </div>
+        <div>
+          <img src="images/main_background.jpg" class="img-fluid" alt="main_page_img">
+        </div>
+      </div>
+      
+    </header>
+
+    <!--페이지 소개글-->
+    <div class="section gy-3">
+      <div class="text-center py-5">
+        <h2 class="fw-bold">"Love Pet" 은 유기동물 입양사이트입니다.</h2>
+ 
+        <p> <em>급증하는 유기동물의 수로 매년 2만여 마리가 안락사를 당하고 있습니다.</em><br>
+          <em>Love pet을 통해 사지 않고, 입양하는 문화를 만들어요.</em></p>
+
+        <div class="g-1">
+          <img src="images/e582d415-e933-490b-91e2-e8c1149c1fee.jpg" alt="site_explanation_img" class="img-fluid" width="500px"> 
+       </div>     
+      </div>
+    </div>
+    
+    <!--실시간 보호중인 동물-->
+    <div class="container overflow-hidden gy-3" id="protect">
+      <div >
+        <div class="text-center py-3">
+          <h2 class="fw-bold">실시간 보호중인 동물</h2>
+        </div>
+        
+        <div id="carousel-img-slide" class="container carousel slide carousel-dark" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/4d8856d3-5cca-41b6-83b5-352a24e169d8.jpg" class="d-block w-50 m-auto" alt="carousel-img-slide_img1">
+              <div class="carousel-caption d-none d-md-block text-white">
+                <h4 class="fw-bold">초코</h4>
+                <p>김포 유기동물 보호소</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/spitz-3699478_1280.jpg" class="d-block  w-50 m-auto" alt="carousel-img-slide_img2">
+              <div class="carousel-caption d-none d-md-block text-white">
+                <h4>꼬미</h4>
+                <p>파주 유기동물 보호소</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/maltese-1123016_640.jpg" class="d-block w-50 m-auto" alt="carousel-img-slide_img3">
+              <div class="carousel-caption d-none d-md-block text-white">
+                <h4>복이</h4>
+                <p>강릉 유기동물 보호소</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/puppy-4828847_1280.jpg" class="d-block w-50 m-auto" alt="carousel-img-slide_img4">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <h4>향이</h4>
+                <p>광주 유기동물 보호소</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-img-slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-img-slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+      
+      </div>
+    </div>
+
+    
+    <!--베스트 입양후기-->
+   <section class="section overflow-hidden py-4" id="bestreview">
+
+    <h2 class="fw-bold text-center ">베스트 입양후기</h2>
+    <div class="row gy-5">
+        <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="images/dog-2655466_1280.jpg" alt="bestreview_1" class="card-img-top">
+                <div class="card-body text-center">
+                    <h4 class="card-title fs-5 fw-bold">Love pet에서 새로운 가족을 만났어요!</h4>
+                    <p class="card-text">귀여운 사고 뭉치, 뭉이를 소개합니다.</p>
+                    
+                    <p class="d-inline-flex gap-1">
+                      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#bestreview_1_" aria-expanded="false" aria-controls="collapseExample">
+                        바로가기
+                      </button>
+                    </p>
+                    <div class="collapse" id="bestreview_1_">
+                      <div class="card card-body border border-secondary border-2">
+                        귀여운 사고 뭉치, 뭉이를 소개합니다. 신중한 고민 끝에 반려견을 입양하기로 결정했고, love pet을 통해 소중한 반려견을 만날 수 있게 되었습니다.
+                        뭉이를 처음 본 것은 love pet의 보호중인 동물에서 볼 수 있었습니다. 추정 나이는 3살이었고, 도로변에 유기된 아이였고, 슬개콜 탈구도 있었습니다.
+                        입양 문의를 한 후, 김포 유기 동물 보호소에 방문을 했고 약 1달간 뭉이와 사회성 훈련을 함께했습니다. 뭉이도 저도 적응 훈련을 가졌고, 결과적으로 저희는 가족이 될 수 있었습니다.
+                        오랜 치료 끝에 슬개골도 완치가 되었고, 어느 강아지처럼 잘 뛰어 놉니다!
+                        가족을 만나게 해준 love pet에게 정말 감사드립니다!
+                        
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="images/dog-3407906_1280.jpg" alt="bestreview_2" class="card-img-top">
+                <div class="card-body text-center">
+                  <h4 class="card-title fs-5 fw-bold">Love pet에서 평생 가족을 만났어요!</h4>
+                    <p class="card-text">우리집 막내, 보송이를 소개합니다.</p>
+                 
+                    <p class="d-inline-flex gap-1">
+                      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#bestreview_2_" aria-expanded="false" aria-controls="collapseExample">
+                        바로가기
+                      </button>
+                    </p>
+                    <div class="collapse" id="bestreview_2_">
+                      <div class="card card-body border border-secondary border-2">
+                        우리집 막내 보송이를 소개합니다. 신중한 고민 끝에 반려견을 입양하기로 결정했고, love pet을 통해 소중한 반려견을 만날 수 있게 되었습니다.
+                        보송이를 처음 본 것은 love pet의 보호중인 동물에서 볼 수 있었습니다. 추정 나이는 3살이었고, 도로변에 유기된 아이였고, 슬개콜 탈구도 있었습니다.
+                        입양 문의를 한 후, 파주 유기 동물 보호소에 방문을 했고 약 1달간 보송이와 사회성 훈련을 함께했습니다. 보송이도 저도 적응 훈련을 가졌고, 결과적으로 저희는 가족이 될 수 있었습니다.
+                        오랜 치료 끝에 슬개골도 완치가 되었고, 어느 강아지처럼 잘 뛰어 놉니다!
+                        가족을 만나게 해준 love pet에게 정말 감사드립니다!
+                        
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <!--주소 및 찾아오시는 길-->
+  <section class="container overflow-hidden py-5" id="main_address">
+
+    <div class="row justify-content-center align-items-center mb-5">
+
+        <div class="col-md-5">
+            <h3 class="fw-bold ">주소</h3>
+            <p>서울특별시 노원구 화랑로 621
+            </p>
+            <h5></h5>
+            <br><br>
+
+            <h3 class="fw-bold ">찾아오시는 길</h3>
+            <br>
+            <h5 class="fw-bold ">지하철</h5>
+            <p>- 석계역 4번 출구 하차 후, 시내버스 이용(1132, 1155, 1156번) </p>
+            <p>- 태릉입구역 7번 출구 하차 후, 학교버스 및 시내버스 이용(1132, 1155, 1156, 73, 82A, 82B 번)</p>
+
+            <br>
+            <h5 class="fw-bold ">시내버스</h5>
+            <p>- 1132번 탑승 후, 서울여자대학교 남문 하차</p>
+
+        </div>
+        <div class="col-md-7 col-lg-5 px-lg-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.896733255824!2d127.08788187541224!3d37.628116820595395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb9870d108e45%3A0x14cb14d89b7450a7!2z7ISc7Jq47Jes7J6Q64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1702115691181!5m2!1sko!2skr" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</section>
+
+
+    
+<!--풋터-->
+<footer class="text-white py-4 mb-0 ">
+  <div class="container text-center">
+    <div class="row justify-content-evenly">
+      <div class="col-4">
+        문의 : 02-123-456 / lovepet@lovepet.com
+      </div>
+      <div class="col-4">
+        <div class="row justify-content-evenly">
+          <div class="col-3"><a href="https://www.instagram.com/" class="link-light" target="_blank"><i class="bi-instagram fs-5"></i></a></div>
+          <div class="col-3"><a href="https://www.facebook.com/" class="link-light" target="_blank"><i class="bi bi-facebook fs-5"></i></a></div>
+          <div class="col-3"><a href="https://twitter.com/" class="link-light" target="_blank"><i class="bi bi-twitter fs-5"></i></a></div>
+          <div class="col-3"><a href="https://www.youtube.com/" class="link-light" target="_blank"><i class="bi bi-youtube fs-5"></i></a></div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

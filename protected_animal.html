@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid my-2 ms-2 me-2">
+
+        <a class="navbar-brand ms-2 fw-bold" href="index.html">
+          <img src="images/dog-footprint.png" alt="logo_image" width="30" height="30"> Love Pet
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="메뉴">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+     
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-underline ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">보호중인 동물</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adoptioninquiry.html">입양문의</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adoptionreview.html">입양후기</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav nav-underline" id="logi">
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='login.html'" >로그인</label>
+            </li>
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='join.html'">회원가입</label>
+            </li>
+  
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <section class="section gy-3 p-3" id="protected_animal_header">
+      <div class="text-center py-5">
+        <h4 class="fw-bold">전국 보호소에서 보호중이 유기 동물 현황입니다.</h4>
+        <p>보호소분들은 공고 업로드에서 유기 동물 정보 입력 가능합니다. </p>
+        
+      </div>
+
+      <div class="container-fluid text-center ">
+        <input type="checkbox" class="btn-check btn-dark" id="btn-check-2-outlined" checked autocomplete="off">
+        <label class="btn btn-outline-secondary " data-bs-toggle="modal" data-bs-target="#upload">공고 업로드</label><br>
+      </div>
+   </section>
+
+  
+  <!--공고 업로드 스크립트--> 
+    <script>
+      function modal(){
+        $("#upload").modal("show");
+      }
+    </script>
+  
+
+  <!--공고 업로드 모달 창--> 
+    <div class="modal fade" id="upload" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="formFile" class="form-label">이미지 업로드</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">이름</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">공고번호</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">성별 / 나이</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">질병여부</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">특징</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">확인</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--보호 중인 동물 이미지 및 설명-->
+    <section class="py-3 g-4 overflow-hidden" id="protected_animal_exp">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/4d8856d3-5cca-41b6-83b5-352a24e169d8.jpg" class="card-img-top" alt="protected_animal_img1">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">초코</h5>
+              <p class="card-text">
+                <p><strong>보호소 </strong>: 김포 유기동물 보호소</p>
+                <p><strong>공고번호 </strong>: #ab0000</p>
+                <p><strong>성별/나이 </strong>: 여 / 2살추정</p>
+                <p><strong>질병여부 </strong>: 슬개골 탈구 2기</p>
+                <p><strong>특징 </strong>: 약간 소심, 훈련을 통해 개선되고 있음</p>
+              </p>
+            </div>
+            <div class="card-body text-center">
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-dark" for="option2" onclick="location.href='adoptioninquiry.html'">입양문의 바로가기</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/spitz-3699478_1280.jpg" class="card-img-top" alt="protected_animal_img2">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">꼬미</h5>
+              <p class="card-text">
+                <p><strong>보호소 </strong>: 파주 유기동물 보호소</p>
+                <p><strong>공고번호 </strong>: #ab0001</p>
+                <p><strong>성별/나이 </strong>: 남 / 5살추정</p>
+                <p><strong>질병여부 </strong>: 귀알러지 치료중</p>
+                <p><strong>특징 </strong>: 매우 활발, 사교성 좋음</p>
+              </p>
+            </div>
+            <div class="card-body text-center">
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-dark" for="option2" onclick="location.href='adoptioninquiry.html'">입양문의 바로가기</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/maltese-1123016_640.jpg" class="card-img-top" alt="protected_animal_img3">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">복이</h5>
+              <p class="card-text">
+                <p><strong>보호소 </strong>: 강릉 유기동물 보호소</p>
+                <p><strong>공고번호 </strong>: #ab0002</p>
+                <p><strong>성별/나이 </strong>: 여 / 7살추정</p>
+                <p><strong>질병여부 </strong>: 백내장 2기</p>
+                <p><strong>특징 </strong>: 활발한 편, 사람을 좋아함</p>
+              </p>
+            </div>
+            <div class="card-body text-center">
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-dark" for="option2" onclick="location.href='adoptioninquiry.html'">입양문의 바로가기</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/puppy-4828847_1280.jpg" class="card-img-top" alt="protected_animal_img4">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">향이</h5>
+              <p class="card-text ">
+                <p><strong>보호소 </strong>: 광주 유기동물 보호소</p>
+                <p><strong>공고번호 </strong>: #ab0003</p>
+                <p><strong>성별/나이 </strong>: 남 / 8살추정</p>
+                <p><strong>질병여부 </strong>: 치아 손상으로 3개 제거함</p>
+                <p><strong>특징 </strong>: 조용한 편, 학대받은 정황이 있음</p>
+              </p>
+            </div>
+            <div class="card-body text-center">
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-dark" for="option2" onclick="location.href='adoptioninquiry.html'">입양문의 바로가기</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/dog-3704098_1280.jpg" class="card-img-top" alt="protected_animal_img5">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">동동</h5>
+              <p class="card-text ">
+                <p><strong>보호소 </strong>: 과천 유기동물 보호소</p>
+                <p><strong>공고번호 </strong>: #ab0005</p>
+                <p><strong>성별/나이 </strong>: 여 / 3살추정</p>
+                <p><strong>질병여부 </strong>: 종합백신 6차 접종 완료</p>
+                <p><strong>특징 </strong>: 매우 활발, 사교성 좋음</p>
+              </p>
+            </div>
+            <div class="card-body text-center">
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-dark" for="option2" onclick="location.href='adoptioninquiry.html'">입양문의 바로가기</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/puppy-4583450_1280.jpg" class="card-img-top" alt="protected_animal_img6">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">만두</h5>
+              <p class="card-text ">
+                <p><strong>보호소 </strong>: 용인 유기동물 보호소</p>
+                <p><strong>공고번호 </strong>: #ab0006</p>
+                <p><strong>성별/나이 </strong>: 남 / 2개월추정</p>
+                <p><strong>질병여부 </strong>: 심장 사상충 치료중</p>
+                <p><strong>특징 </strong>: 애교가 많음</p>
+              </p>
+            </div>
+            <div class="card-body text-center">
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-dark" for="option2" onclick="location.href='adoptioninquiry.html'">입양문의 바로가기</label>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!--페이지 번호-->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+  <!--이미지 확대 기능-->
+  <script type="text/javascript">
+    var img = document.getElementsByTagName("img");
+        for (var x = 0; x < img.length; x++) {
+          img.item(x).onclick=function() {window.open(this.src)}; 
+        }
+    </script>
+    
+
+</body>
+</html>
+  
+
+    

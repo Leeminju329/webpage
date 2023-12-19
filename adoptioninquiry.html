@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid my-2 ms-2 me-2">
+
+        <a class="navbar-brand ms-2 fw-bold" href="index.html">
+          <img src="images/dog-footprint.png" alt="logo_image" width="30" height="30"> Love Pet
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="메뉴">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-underline ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="protected_animal.html">보호중인 동물</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">입양문의</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adoptionreview.html">입양후기</a>
+            </li>
+  
+
+          </ul>
+
+          <ul class="navbar-nav nav-underline" id="logi">
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='login.html'" >로그인</label>
+            </li>
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='join.html'">회원가입</label>
+            </li>
+  
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!--페이지 설명-->    
+    <section class="section gy-3 p-3" id="adoptioninquiry_header">
+      <div class="text-center py-5">
+        <h4 class="fw-bold">신중한 고민 후, 입양문의 부탁드립니다.</h4>
+        
+      </div>
+    </section>
+
+    <!--게시판 + 게시글 작성 버튼-->    
+    <div class="container" id="inqury">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">닉네임</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성일</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>꼬미 입양문의 합니다.</td>
+            <td>2023.01.01</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>초코 입양문의 합니다.</td>
+            <td>2023.01.04</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>삐삐</td>
+            <td>꼬미 입양문의 합니다.</td>
+            <td>2023.01.06</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>만두</td>
+            <td>향이 입양문의 합니다.</td>
+            <td>2023.01.08</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>룰루</td>
+            <td>꼬미 입양문의 합니다.</td>
+            <td>2023.05.07</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>랄라</td>
+            <td>몽이 입양문의 합니다.</td>
+            <td>2023.07.06</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Min</td>
+            <td>동동이 입양문의 합니다.</td>
+            <td>2023.09.06</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>제이</td>
+            <td>동동이 입양문의 합니다.</td>
+            <td>2023.10.08</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Jay</td>
+            <td>동동이 입양문의 합니다.</td>
+            <td>2023.11.15</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Tom</td>
+            <td>뽀미 입양문의 합니다.</td>
+            <td>2023.12.06</td>
+          </tr>
+
+          
+        </tbody>
+      </table>
+  
+      <div class="container justify-content-end ">
+        <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+        <label class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#writing">게시글 작성</label><br>     
+      </div>
+
+      <!--페이지 이동 버튼-->  
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+  
+
+
+    <!--게시글 작성 버튼 스크립트-->  
+    <script>
+      function modal(){
+        $("#writing").modal("show");
+      }
+    </script>
+
+
+
+
+
+    <!-- 게시글 작성 버튼 모달 창창 -->
+    <div class="modal fade" id="writing" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title align-items-center" id="staticBackdropLabel">게시글 작성</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">제목</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">내용</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">확인</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
+  
+
+    

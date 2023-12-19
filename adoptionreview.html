@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid my-2 ms-2 me-2">
+
+        <a class="navbar-brand ms-2 fw-bold" href="index.html">
+          <img src="images/dog-footprint.png" alt="logo_image" width="30" height="30"> Love Pet
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="메뉴">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-underline ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="protected_animal.html">보호중인 동물</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="adoptioninquiry.html">입양문의</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">입양후기</a>
+            </li>
+
+          </ul>
+
+          <ul class="navbar-nav nav-underline" id="logi">
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='login.html'" >로그인</label>
+            </li>
+
+            <li>
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn btn-secondary" for="option2" onclick=" location.href='join.html'">회원가입</label>
+            </li>
+  
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!--페이지 설명-->  
+    <section class="section gy-3 p-3" id="adoptionreview_header">
+      <div class="text-center py-5">
+        <h4 class="fw-bold">Love Pet을 통해 새로운 가족을 만난 분들의 후기입니다.</h4>       
+      </div>
+
+   </section>
+
+   <!--베스트 후기 글-->  
+      <section class="container overflow-hidden py-5">
+      <div class="row mb-5 g-4">
+
+        <div class="col-md-6">
+          <div class="card-hover border p-3">
+            <div class="row g-0 bg-body-secondary position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="images/jack-russell-2029214_1280.jpg" class="w-100 rounded" alt="best_1" >
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 fw-bold p-2">우리집 새 식구를 소개합니다!!</h5>
+                <p>안녕하세요. Love Pet에서 새 식구를 만나게 된, "Jake"입니다. 3년 전, 15년동안 함께 살던 반려견이 무지개다리를 건너게 되었습니다. 새로운 가족을 바로 
+                  만나기에는 마음의 준비가 되지 않아서 오랜 시간동안 고민을 했습니다. 약 한 달 전부터 Love Pet에서 유심히 지켜보던 강아지가 있었는데, 그 친구가 현재 
+                제 가족이 되었습니다. 이름은 초코이고, 나이는 3살로 추정된다고 합니다. 도로에서 구조된 아이인데 어느 반려견처럼 온순하고 착하고 애교도 많아요!!
+                새 가족을 만나게 해준 Love Pet에게 감사드립니다. 모두 love pet에서 새로운 가족을 만났으면 좋겠어요! </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-hover border p-3">
+            <div class="row g-0 bg-body-secondary position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="images/cat-2996770_1280.jpg" class="w-100 rounded" alt="best_2" >
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 fw-bold p-2">평생 가족을 만났어요!!</h5>
+                <p>안녕하세요. Love Pet에서 새 식구를 만나게 되었습니다. 이름은 애옹이이고 2살입니다! 길고양이 출신이지만 사람도 좋아하고 애교도 많아요!
+                  반려묘 입양을 위해 매일매일 love pet에서 공고를 살펴봤던 것 같아요. 그러다 어느 날 애옹이를 보게 되었고, 바로 보호소에 연락을 해서 애옹이를 만날 수 있었어요! 
+                  바로 입양 가능한게 아니고, 약 한 달간 입양자도 테스트를 보게됩니다. 경제력, 여유 시간 등에 대해 면접을 보았고 테스트에 통과해서 애옹이와 만날 수 있었어요.
+                  유기 동물 보호에 앞장 서준 love pet에게 정말 감사드리고, 애옹이를 만나게 해주셔서 감사드립니다!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-hover border p-3">
+            <div class="row g-0 bg-body-secondary position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="images/golden-retriever-4292254_1280.jpg" class="w-100 rounded" alt="best_3" >
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 fw-bold p-2">Love Pet 감사드립니다!!</h5>
+                <p>안녕하세요. Love Pet에서 새 식구를 만나게 되었습니다. 리트리버로 이름은 둥이 입니다! 둥이는 개농장에서 구조되었다고 해요. 
+                  구조 후, 보호소 봉사자분들이 노력을 통해 아픈 곳도 많이 좋아졌고, 사교성도 기를 수 있었어요. 저는 둥이를 입양하기 위해서 약 3달 간, 입양 테스트를 보았고, 
+                  둥이와 함께 산책하고 훈련도 받았습니다. 결과적으로 둥이와 평생 함께 할 수 있게 되었습니다. love pet이 없었다면, 저는 둥이랑 만날 수 없었겠죠?
+                  유기견이라고 하더라도 일반 반려견도 다른게 없답니다! 그래도 신중한 고민 후에 반려동물 입양을 해야 한다는 점 기억해주세요!
+                  love pet 감사합니다!!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-hover border p-3">
+            <div class="row g-0 bg-body-secondary position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="images/dog-5773397_1280.jpg" class="w-100 rounded" alt="best_4" >
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="mt-0 fw-bold p-2">우리집 막내를 소개합니다!</h5>
+                <p>안녕하세요. Love Pet에서 새 식구를 만나게 되었습니다. 이름은 몽이 입니다! 몽이는 고속도로에서 구조되었다고 해요. 
+                  구조 후, 보호소 봉사자분들이 노력을 통해 아픈 곳도 많이 좋아졌고, 사교성도 기를 수 있었어요. 저는 몽이를 입양하기 위해서 약 3달 간, 입양 테스트를 보았고, 
+                  몽이와 함께 산책하고 훈련도 받았습니다. 결과적으로 몽이와 평생 함께 할 수 있게 되었습니다. love pet이 없었다면, 저는 몽이랑 만날 수 없었겠죠?
+                  유기견이라고 하더라도 일반 반려견도 다른게 없답니다! 그래도 신중한 고민 후에 반려동물 입양을 해야 한다는 점 기억해주세요!
+                  love pet 감사합니다!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </section>
+
+
+      <!--페이지 이동 버튼-->  
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   
+</body>
+</html>
